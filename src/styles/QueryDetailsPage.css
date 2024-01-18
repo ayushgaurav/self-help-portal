@@ -1,0 +1,55 @@
+.query-details-page {
+    padding: 20px;
+  }
+  
+  .query-details-container {
+    margin: auto;
+    max-width: 800px; /* Adjust as per your layout preference */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .query-details-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .query-details-container p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .query-details-container strong {
+    color: #000;
+  }
+  
+  .query-details-container .description-box {
+    border: 2px solid #007bff; /* Solid color outline */
+    margin-top: 40px; /* Increased space above the description box */
+    padding: 10px;
+    height: 150px; /* Fixed height for the scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    background-color: white; /* Background color for the box */
+  }
+  
+  .query-details-container .description-content {
+    white-space: pre-wrap; /* Maintain formatting for long texts */
+  }
+  
+  
+  .go-back-button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .go-back-button:hover {
+    background-color: #0056b3;
+  }
