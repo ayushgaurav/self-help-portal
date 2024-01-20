@@ -6,10 +6,10 @@ import DashboardNav from '../components/DashboardNav';
 import '../styles/MyQueriesPage.css';
 
 function MyQueriesPage() {
-  // Sample data for demonstration
+  // Sample data with a single tag per query
   const queries = [
-    { index: 1, title: "Query Title 1", tags: ["Tag1", "Tag2"], description: "Description 1" },
-    { index: 2, title: "Query Title 2", tags: ["Tag3", "Tag4"], description: "Description 2" },
+    { index: 1, title: "Query Title 1", tag: "Tag1", description: "Description 1" },
+    { index: 2, title: "Query Title 2", tag: "Tag3", description: "Description 2" },
     // ... more queries
   ];
 
@@ -24,7 +24,7 @@ function MyQueriesPage() {
             <tr>
               <th>Index</th>
               <th>Title</th>
-              <th>Tags</th>
+              <th>Tag</th> {/* Singular Tag */}
               <th>Actions</th>
             </tr>
           </thead>
@@ -33,7 +33,7 @@ function MyQueriesPage() {
               <tr key={query.index}>
                 <td>{query.index}</td>
                 <td>{query.title}</td>
-                <td>{query.tags.join(", ")}</td>
+                <td>{query.tag}</td> {/* Displaying single tag */}
                 <td>
                   <Link to={`/query-details/${query.index}`}>More Details</Link>
                 </td>
